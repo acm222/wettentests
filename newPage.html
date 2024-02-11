@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wetten</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+  <style>
+
+
+
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: rgb(29, 28, 28);
+    }
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      background-color:  #330329;
+      color: white;
+    }
+
+    .header img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+
+    .section {
+      margin: 20px;
+    }
+
+    .sectionmain h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .sectionmain p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    .zurückbutton {
+      color: white;
+      background-color: #330329;
+      border: 1.4px solid  rgb(240, 235, 235); /* 1px dünner schwarzer Rahmen */
+    padding: 10px; /* Innenabstand für den Text */
+    border-radius: 8px;
+      padding: 6px 16px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 15px;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 8px;
+      width: 200px;
+      
+    }
+
+    .zurückbutton:hover {
+        background-color:  white;
+      border: none;
+      color: #330329;
+     
+
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #330329;
+      color: white;
+      margin-bottom: 0px;
+    }
+
+    .footertext {
+      font-size: 17.85px;
+    }
+
+    .impressum {
+      text-decoration: underline;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .sectionmain {
+        margin: 80px;
+        color: rgb(240, 235, 235);
+    }
+
+    .ereignis {
+      margin: 50px;
+    border: 1.4px solid  rgb(240, 235, 235); /* 1px dünner schwarzer Rahmen */
+    padding: 10px; /* Innenabstand für den Text */
+    border-radius: 19px;
+    }
+
+    .wette2 {
+        align-items: center;
+        display: inline-block;
+
+    }
+
+    .checkoutbutton {
+        border: 1.4px solid rgb(240, 235, 235); /* 1px dünner schwarzer Rahmen */
+    padding: 16.5px; /* Innenabstand für den Text */
+    border-radius: 8px;
+      background-color: #330229;
+      color: white;
+      padding: 8px 18px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      font-size: 15.6px;
+      margin: 20px auto;
+      margin-top: 25px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      border-radius: 8px;
+      width: 200px;
+    }
+
+    .checkoutbutton:hover {
+        background-color: white;
+        color: #330329;
+    }
+
+    .quote {
+         text-align:  right;
+    }
+
+    @media (min-width: 768px) {
+      .header {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .header img {
+        max-width: 300px;
+      }
+
+      .header button {
+        margin-top: 0;
+      }
+
+      .sectionmain {
+        max-width: 600px;
+        
+      }    }
+
+    </style>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="header">
+            <h1>Platziere deine Wetten</h1>
+            <button class="zurückbutton" onclick="redirectToNewPage('index.html#wetten')">Zurück</button>
+            <button  class="zurückbutton"  onclick="redirectToNewPage('login.html')">Login</button>
+        </div>
+
+
+        <div class="sectionmain" id="wetten">
+
+            <h2>Wetten der Woche</h2>
+            <p>  </p>
+            <div class="wette2">
+            <p class="ereignis">Der Schnitt der Englisch Schulaufgabe am 26.02 liegt über 3,03  (Quote 1,6x)</p> <button class="checkoutbutton" onclick="redirectToNewPage('checkout.html')">Wette platzieren</button>
+            </div>
+            <p>  </p>
+            <div class="wette2">
+            <p class="ereignis">Bruno Hainzinger bekommt in der 2.Englisch Schulaufgabe am 26.02.24 eine 2  (Quote 1,6x) </p> <button class="checkoutbutton" onclick="redirectToNewPage()">Wette  platzieren</button>  
+            </div>
+            <p>  </p>
+            <div class="wette2">
+            <p class="ereignis">Der Schnitt der 2. Deutsch Schulaufgabe liegt über 3,12 (Quote 1,6x)</p><button class="checkoutbutton" onclick="redirectToNewPage()">Wette platzieren</button>   
+            </div>
+            <p>  </p>
+            <div class="wette2">
+            <p class="ereignis">Achim Müller bekommt in der 2.Mathe Schulaufgabe eine 2 (Quote 1,6x) </p><button class="checkoutbutton" onclick="redirectToNewPage()">Wette platzieren</button>   
+            </div>
+            <p>  </p>
+            <div class="wette2">
+            <p class="ereignis">Der Schnitt der 2.Mathe Schulaufgabe liegt unter 4,22  (Quote 1,6x)</p><button class="checkoutbutton" onclick="redirectToNewPage()">Wette platzieren</button>  
+            </div>
+            <p>  </p>
+            <div class="wette2">
+            <p class="ereignis">Der nächste Feuerarlam finded bis zum 18,05.24 statt  (Quote 1,6x) </p><button class="checkoutbutton" onclick="redirectToNewPage()">Wette platzieren</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p class="footertext">&copy; <strong> 2024 Viscardi-Wetten. </strong> (achim mueller) Alle Rechte vorbehalten. </p>
+            <div class="impressum">
+               <strong>Impressum</strong>
+               <strong>Kontakt</strong>
+               <strong>AGB</strong>
+               
+            </div>
+        </div>
+    </div>
+   
+    <script>
+    
+    function redirectToNewPage(destination) {
+  // Navigiere zu der neuen Seite
+  window.location.href = destination;
+}
+
+
+    </script>
+    
+
+</body>
+</html>
